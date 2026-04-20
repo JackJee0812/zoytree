@@ -171,23 +171,18 @@
 }
 
 .hero-title {
-  color: #fff;
-  font-size: 64px;
+  color: black;
+  font-size: 42px;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin: 100px auto 24px;
-  animation: heroReveal 1.2s var(--ease-premium) forwards;
+  letter-spacing: 1px;
+  margin: 50px auto 10px;
 }
 
 .hero-sub {
-  max-width: 700px;
-  margin: 0 auto 80px;
-  color: #a1a1a1;
-  font-size: 18px;
-  line-height: 1.6;
-  opacity: 0;
-  animation: heroReveal 1.2s var(--ease-premium) 0.2s forwards;
+  max-width: 640px;
+  margin: 0 auto 60px;
+  color: var(--text-muted);
+  font-size: 15px;
 }
 
 /* STAGE */
@@ -201,22 +196,21 @@
 .float-card {
   position: absolute;
 
-  background: rgba(13, 20, 18, 0.4);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 224, 184, 0.2);
+  background: #effff9;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
 
-  padding: 24px;
-  border-radius: 20px;
-  width: 280px;
+  padding: 16px;
+  border-radius: 10px;
+  width: 240px;
 
   text-align: left;
-  font-size: 15px;
-  color: #e0e0e0;
+  font-size: 13px;
+  color: #cfcfcf;
 
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  animation: heroReveal 1.2s var(--ease-premium) 0.4s forwards, float 4s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(0, 224, 184, 0.15);
+
+  animation: float 4s ease-in-out infinite;
 }
 
 .float-card:hover {
@@ -295,21 +289,13 @@
 
 /* FLOAT ANIMATION */
 @keyframes float {
-  0%, 100% {
+  0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
   }
-}
-
-@keyframes heroReveal {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
+  100% {
     transform: translateY(0);
   }
 }
@@ -322,14 +308,12 @@
 }
 
 .info-card {
-  background: rgba(13, 20, 18, 0.4);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  color: #a1a1a1;
-  padding: 40px;
+  background: rgba(13, 51, 45, 1);
+  color: #ccc;
+  padding: 25px 40px;
   border: 1px solid rgba(0, 224, 184, 0.15);
-  border-radius: 24px;
-  transition: all 0.5s var(--ease-premium);
+  border-radius: 20px;
+  transition: 0.3s;
 }
 
 .info-header {

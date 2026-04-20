@@ -58,19 +58,10 @@
   font-display: swap;
 }
 
-:root {
-  --primary: #00e0b8;
-  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
 /* ================= GLOBAL ================= */
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -81,8 +72,4 @@ body {
     -apple-system,
     sans-serif;
   background: #000;
-  color: #fff;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }

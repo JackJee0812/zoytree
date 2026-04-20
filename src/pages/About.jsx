@@ -7,20 +7,8 @@ import greenAddSquare from '../assets/svg/green_add_square_hollow.svg';
 const About = () => {
   return (
     <>
-    <>
       {/* TOP SECTION */}
       <section className="top-section">
-        {/* OVERLAY */}
-        <div className="hero-overlay"></div>
-
-        {/* STARS */}
-        <div className="hero-stars">
-          <div className="star s1"></div>
-          <div className="star s2"></div>
-          <div className="star s4"></div>
-          <div className="star s5"></div>
-        </div>
-
         {/* HERO */}
         <section className="about-hero text-center">
           <div className="container">

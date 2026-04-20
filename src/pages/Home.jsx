@@ -20,25 +20,26 @@ const Home = () => {
     <>
       {/* HERO */}
       <section className="hero">
-        {/* VIDEO BACKGROUND */}
+        {/* STARS */}
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="star"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${i % 2 === 0 ? Math.random() * 20 : 80 + Math.random() * 20}%`,
+              width: `${Math.random() * 3 + 1}px`,
+              height: `${Math.random() * 3 + 1}px`,
+              animation: `twinkle ${Math.random() * 3 + 2}s infinite, float ${Math.random() * 5 + 5}s infinite ease-in-out`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          />
+        ))}
+
         <video className="hero-video" autoPlay muted loop playsInline preload="none">
           <source src={heroVideo} type="video/mp4" />
         </video>
 
-        {/* OVERLAY */}
-        <div className="hero-overlay"></div>
-
-        {/* STARS */}
-        <div className="hero-stars">
-          <div className="star s1"></div>
-          <div className="star s2"></div>
-          <div className="star s3"></div>
-          <div className="star s4"></div>
-          <div className="star s5"></div>
-          <div className="star s6"></div>
-        </div>
-
-        {/* CONTENT */}
         <div className="container text-center">
           <h1 className="hero-title">
             ARCHITECTING BUSINESS <br />
@@ -78,7 +79,7 @@ const Home = () => {
       {/* SERVICES */}
       <section className="services" id="services">
         <div className="container">
-          <h2 className="section-title">OUR SERVICES</h2>
+          <h2 className="section-title dark">OUR SERVICES</h2>
 
           <div className="services-row">
             {/* CARD 1 */}
